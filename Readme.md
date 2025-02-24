@@ -1,41 +1,40 @@
-lding a Currency Converter
+Building a Currency Converter
 Introduction
 Agile methodology is a flexible and iterative approach to software development that promotes collaboration, adaptability, and customer satisfaction. One of the most widely used Agile frameworks is Scrum but we have chosen sprint, which helps teams deliver functional software in incremental stages called sprints. This document explains how to apply Scrum to build a currency converter application efficiently.
+
 1. Defining the Product Vision
-The first step in an Agile approach is to establish a clear product vision. The currency converter application should allow users to convert between different currencies in real time, ensuring accuracy and efficiency. 
-The key features include:
-•   Selection of source and target currencies
-•   Fetching real-time exchange rates
-•   User-friendly interface
-•   Historical exchange rate data (optional)
+   The first step in an Agile approach is to establish a clear product vision. The currency converter application should allow users to convert between different currencies in real time, ensuring accuracy and efficiency.
+   The key features include:
+   • Selection of source and target currencies
+   • Fetching real-time exchange rates
+   • User-friendly interface
+   • Historical exchange rate data (optional)
 2. Creating the Product Backlog
-The product backlog is a prioritized list of features and tasks required for development. Example backlog items include:
-•   Set up the project environment
-•   Design the user interface (UI)
-•   Integrate an API for real-time exchange rates
-•   Implement currency selection functionality
-•   Develop conversion logic
-•   Implement testing and debugging
-•   Deploy the application
+   The product backlog is a prioritized list of features and tasks required for development. Example backlog items include:
+   • Set up the project environment
+   • Design the user interface (UI)
+   • Integrate an API for real-time exchange rates
+   • Implement currency selection functionality
+   • Develop conversion logic
+   • Implement testing and debugging
+   • Deploy the application
 3. Sprint Planning
-Scrum divides development into sprints, typically lasting 1-2 weeks. During sprint planning, the team selects a subset of tasks from the backlog to work on in the sprint. A possible breakdown for Sprint 1 could be:
-•   Setting up the project environment
-•   Designing the UI
-•   Implementing currency selection
+   Scrum divides development into sprints, typically lasting 1-2 weeks. During sprint planning, the team selects a subset of tasks from the backlog to work on in the sprint. A possible breakdown for Sprint 1 could be:
+   • Setting up the project environment
+   • Designing the UI
+   • Implementing currency selection
 4. Daily Stand-up Meetings
-The team holds brief daily meetings to discuss:
-•   What was accomplished yesterday?
-•   What will be worked on today?
-•   Any blockers or challenges?
+   The team holds brief daily meetings to discuss:
+   • What was accomplished yesterday?
+   • What will be worked on today?
+   • Any blockers or challenges?
 5. Development & Continuous Feedback
-During the sprint, developers work on assigned tasks. Feedback from stakeholders and users is gathered frequently to ensure alignment with expectations.
+   During the sprint, developers work on assigned tasks. Feedback from stakeholders and users is gathered frequently to ensure alignment with expectations.
 6. Sprint Review & Retrospective
-At the end of each sprint:
-•   Sprint Review: The team showcases completed features.
-•   Sprint Retrospective: The team reflects on what went well and what can be improved for future sprints.
+   At the end of each sprint:
+   • Sprint Review: The team showcases completed features.
+   • Sprint Retrospective: The team reflects on what went well and what can be improved for future sprints.
 7. Incremental Delivery
-After multiple sprints, a minimum viable product (MVP) is ready. Further iterations continue to enhance the application based on user feedback.
-Conclusion
-Applying Scrum to develop a currency converter ensures a structured yet flexible workflow. Continuous iterations, stakeholder feedback, and adaptability make Agile an effective methodology for delivering high-quality software solutions.
-
-
+   After multiple sprints, a minimum viable product (MVP) is ready. Further iterations continue to enhance the application based on user feedback.
+   Conclusion
+   Applying Scrum to develop a currency converter ensures a structured yet flexible workflow. Continuous iterations, stakeholder feedback, and adaptability make Agile an effective methodology for delivering high-quality software solutions.
