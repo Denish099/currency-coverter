@@ -1,59 +1,41 @@
-import React, { useId } from "react";
+import React from "react";
 
 function InputBox({
-  label,
   amount,
   onAmountChange,
   onCurrencyChange,
   currencyOptions = [],
-  selectCurrency = "usd",
-  amountDisable = false,
-  currencyDisable = false,
-  className = "",
+  selectCurrency = "USD",
+  disabled = false,
 }) {
-  const amountInputId = useId();
-
   return (
-    <div
-      className={`bg-white p-3 font-mono  rounded-lg text-sm flex ${className}`}
-    >
-      <div className="w-1/2">
-        <label
-          htmlFor={amountInputId}
-          className="text-black/40 mb-2 inline-block"
-        >
-          {label}
-        </label>
-        <input
-          id={amountInputId}
-          className="outline-none w-full bg-transparent py-1.5"
-          type="number"
-          placeholder="Amount"
-          disabled={amountDisable}
-          value={amount}
-          onChange={(e) =>
-            onAmountChange && onAmountChange(Number(e.target.value))
-          }
-        />
-      </div>
-      <div className="w-1/2 flex flex-wrap justify-end text-right">
-        <p className="text-black/40 mb-2 w-full">Currency Type</p>
-        <select
-          className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
-          value={selectCurrency}
-          onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
-          disabled={currencyDisable}
-        >
-          {currencyOptions.map((currency) => (
-            <option key={currency} value={currency}>
-              {currency}
-            </option>
-          ))}
-        </select>
-      </div>
+    <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 backdrop-blur-lg rounded-2xl p-4 flex items-center border border-white/10">
+      <input
+        type="number"
+        placeholder="0"
+        className="text-4xl md:text-5xl w-full bg-transparent outline-none text-white placeholder-white/50"
+        value={amount}
+        onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
+        disabled={disabled}
+      />
+      <select
+        className="text-lg px-4 py-2 bg-white/10 text-white rounded-xl outline-none border border-white/20 cursor-pointer hover:bg-white/20 transition-colors"
+        value={selectCurrency}
+        onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
+        disabled={disabled}
+      >
+        {currencyOptions.map((currency) => (
+          <option 
+            key={currency} 
+            value={currency}
+            className="bg-indigo-900 text-white"
+          >
+            {currency}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }
 
 export default InputBox;
-
